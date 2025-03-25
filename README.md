@@ -1,27 +1,46 @@
-# KonspecLocation
+# 📍 Konspec Location Tracking
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.18.
+A **mobile app** built with **Ionic + Angular + Cordova**, featuring **background location tracking** using the **TransistorSoft Background Geolocation plugin**.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## 🚀 Features
+✔️ Background location tracking (even when the app is closed)  
+✔️ Automatic start/stop tracking with a schedule  
+✔️ Sends location updates to a server  
+✔️ Works on both **Android** and **iOS**  
+✔️ User authentication  
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🛠 Prerequisites
+Before installing, make sure you have the following installed:  
 
-## Build
+✅ **Node.js** (v16 recommended) → [Download](https://nodejs.org/)  
+✅ **Angular CLI** (v16) → `npm install -g @angular/cli@16.0.0`  
+✅ **Ionic CLI** → `npm install -g @ionic/cli`  
+✅ **Cordova CLI** → `npm install -g cordova`  
+✅ **Android Studio** (for Android builds)  
+✅ **Xcode** (for iOS builds, Mac only)  
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+---
 
-## Running unit tests
+## 📥 Installation
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+#### How to run it locally
+### 1️⃣ Clone the Repository
+1. [Download](https://github.com/seventechco/products-mobile/archive/refs/heads/main.zip) or clone the [repository](https://github.com/satyaseventech/CRMLocationTracking.git) to your local machine:
+```bash
+git clone https://github.com/satyaseventech/CRMLocationTracking.git
+cd CRMLocationTracking
+```
 
-## Running end-to-end tests
+2. Run `npm install` inside the cloned folder:
+```bash
+$ npm install
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+3. Run `ng serve` to run it on browser:
+```bash
+$ ng serve
+```
