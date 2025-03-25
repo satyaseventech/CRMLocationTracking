@@ -1,0 +1,11 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>{{ title }}</ion-title>
+      <div class="close-icon" (click)="closeModal()">&#10006;</div>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <div class="modal-content" [innerHTML]="content"></div>
+  </ion-content>
+  

@@ -1,0 +1,41 @@
+<ion-content [fullscreen]="true">
+
+  <!-- App Version (Top-Right) -->
+  <div class="app-version">{{ appVersion }}</div>
+
+  <!-- Login Page -->
+  <div class="container">
+    <h1 class="heading">👋 Welcome</h1>
+    <p class="para">Sign in to continue!</p>
+    <form [formGroup]="form">
+      <ion-item lines="none" class="ion-item">
+        <fieldset class="input-item">
+          <legend>Email Id</legend> 
+          <ion-input formControlName="email" type="email" placeholder="name@domain.com"></ion-input>
+        </fieldset>
+      </ion-item>
+      <ion-item lines="none" class="ion-item">
+        <fieldset class="input-item">
+          <legend>Password</legend> 
+          <ion-input formControlName="password" type="password" placeholder="*******"></ion-input>
+        </fieldset>
+      </ion-item>
+      <p class="forget-text">
+        <a href="https://crm.konspec.in/#/forgotpassword" target="_blank">Forgot Password?</a>
+      </p>
+      <ion-button class="login-button" (click)="login()" expand="block">Login</ion-button>
+    </form>
+  </div>
+
+</ion-content>
+
+<!-- Footer -->
+<ion-footer>
+  <ion-toolbar>
+    <p class="copyright">
+      Copyright © 2025 | <b>KONSPEC Pvt. Ltd</b> | 
+      <a (click)="openPolicy('privacy')">Data Privacy Policy</a> | 
+      <a (click)="openPolicy('terms')">Terms & Conditions</a>
+    </p>
+  </ion-toolbar>
+</ion-footer>

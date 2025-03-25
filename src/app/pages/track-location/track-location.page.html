@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Track Location</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear" (click)="toggleSettings()">
+        <img src="assets/settings.png" class="settings-icon" alt="Settings">
+      </ion-button>
+    </ion-buttons> 
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="tracking-page">
+  <!-- Tracking Start/Stop Button -->
+  <div class="button-container">
+    <div class="neon-button" (click)="toggleTracking()">
+      <span>{{ isTracking ? 'STOP' : 'START' }}</span>
+    </div>
+  </div>
+
+  <!-- Slide-out Settings Panel -->
+  <div class="settings-panel" [class.open]="settingsOpen">
+    <!-- <div class="settings-header">
+      <span>Settings</span>
+      <div class="close-icon" (click)="toggleSettings()">&#10006;</div>
+    </div> -->
+    <div class="settings-content">
+      <p>
+        <strong (click)="togglePunch()" class="punch-button">{{ punchText }}</strong>
+      </p>    
+      <p><strong>👤 User:</strong> {{ username }}</p>  
+      <p><strong>📱 Version:</strong> {{ appVersion }}</p>
+      <p>
+        <img src="assets/logout.png" class="logout-icon" alt="Logout">
+        <strong (click)="logout()" class="logout-text">  Logout</strong>
+      </p>
+    </div>
+  </div>
+
+</ion-content>

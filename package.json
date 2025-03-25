@@ -1,0 +1,75 @@
+{
+    "name": "Konspec Location Tracking",
+    "version": "0.0.1",
+    "author": "Ionic Framework",
+    "private": true,
+    "scripts": {
+        "ng": "ng",
+        "start": "ng serve",
+        "build": "ng build",
+        "test": "ng test",
+        "lint": "ng lint"
+    },
+    "dependencies": {
+        "@angular/animations": "^16.0.2",
+        "@angular/common": "^16.0.2",
+        "@angular/compiler": "^16.0.2",
+        "@angular/core": "^16.0.2",
+        "@angular/forms": "^16.0.2",
+        "@angular/platform-browser": "^16.0.2",
+        "@angular/platform-browser-dynamic": "^16.0.2",
+        "@angular/router": "^16.0.2",
+        "@auth0/angular-jwt": "^5.2.0",
+        "@awesome-cordova-plugins/app-version": "^6.14.0",
+        "@awesome-cordova-plugins/core": "^6.14.0",
+        "@awesome-cordova-plugins/device": "^6.14.0",
+        "@awesome-cordova-plugins/splash-screen": "^6.14.0",
+        "@ionic/angular": "^8.0.0",
+        "cordova-background-geolocation-lt": "^4.15.0",
+        "cordova-plugin-background-fetch": "~7.2.1",
+        "cordova-plugin-device": "2.0.2",
+        "cordova-plugin-ionic-keyboard": "^2.0.5",
+        "cordova-plugin-ionic-webview": "^5.0.0",
+        "cordova-plugin-statusbar": "^2.4.2",
+        "ionicons": "^7.4.0",
+        "rxjs": "^7.8.0",
+        "zone.js": "~0.13.2"
+    },
+    "devDependencies": {
+        "@angular-devkit/build-angular": "^16.2.16",
+        "@angular-devkit/core": "^16.2.16",
+        "@angular/cli": "^16.0.0",
+        "@angular/compiler-cli": "^16.0.2",
+        "@angular/language-service": "^16.0.2",
+        "@ionic/angular-toolkit": "^11.0.1",
+        "cordova-android": "^13.0.0",
+        "cordova-browser": "^7.0.0",
+        "cordova-ios": "^7.1.1",
+        "cordova-plugin-app-version": "^0.1.14",
+        "cordova-plugin-splashscreen": "^6.0.1",
+        "typescript": "^4.9.3"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-statusbar": {},
+            "cordova-plugin-device": {},
+            "cordova-plugin-ionic-webview": {},
+            "cordova-plugin-ionic-keyboard": {},
+            "cordova-background-geolocation-lt": {
+                "GOOGLE_API_VERSION": "20.+",
+                "HMS_LOCATION_VERSION": "6.9.0.300",
+                "OKHTTP_VERSION": "3.12.+",
+                "EVENTBUS_VERSION": "3.3.1"
+            },
+            "cordova-plugin-app-version": {},
+            "cordova-plugin-background-fetch": {},
+            "cordova-plugin-splashscreen": {}
+        },
+        "platforms": [
+            "ios",
+            "browser",
+            "android"
+        ]
+    },
+    "description": "An Ionic project with background geolocation using Cordova"
+}
