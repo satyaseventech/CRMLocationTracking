@@ -44,3 +44,76 @@ $ npm install
 ```bash
 $ ng serve
 ```
+
+📦 Building the App for Android & iOS
+📱 Android - Generate .apk File
+To build the Android app:
+  
+1️⃣ Remove old build files (Optional):
+```bash
+$ rm -rf www/
+``
+
+2️⃣ Build Angular project for production
+```bash
+$ ng build --configuration=production
+``
+
+3️⃣ Reinstall Android platform (optional but safe)
+
+```bash
+$ cordova platform rm android
+$ cordova platform add android
+``
+
+4️⃣ Build the APK
+
+```bash
+$ cordova build android --release
+``
+
+✅ After successful build, find your APK at:
+
+```bash
+ platforms/android/app/build/outputs/apk/release/app-release.apk
+``
+
+🍏 iOS - Build with Xcode (macOS only)
+To build and run the iOS app:
+1️⃣ Remove old build files.
+
+```bash
+$ rm -rf www/
+``
+
+2️⃣ Build Angular project for production
+
+```bash
+$ ng build --configuration=production
+``
+
+3️⃣ Reinstall iOS platform (optional)
+
+```bash
+$ cordova platform rm ios
+$ cordova platform add ios
+``
+
+4️⃣ Build the iOS project
+
+```bash
+$ cordova build ios --release
+``
+
+✅ This will generate an Xcode project in:
+
+```bash
+platforms/ios/
+``
+👉 Open the .xcworkspace or .xcodeproj in Xcode to run the app on a device or simulator, or archive it for App Store submission.
+
+
+
+
+
+
